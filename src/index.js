@@ -1,3 +1,4 @@
+// add new page
 import './index.html';
 import './card.html';
 import './cart.html';
