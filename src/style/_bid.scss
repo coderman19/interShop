@@ -1,0 +1,33 @@
+.bid__frame {
+  display: flex;
+  flex-direction: column;
+  width: 980px;
+  margin: 0 auto;
+  background-color: $white;
+  padding: 77px 85px;
+  border: 1px solid #ccc;
+  &-title {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 51px;
+    letter-spacing: 2%;
+    // align-items: center;
+    text-align: center;
+    color: #272727;
+    margin-bottom: 40px;
+  }
+  &-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #272727;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+  &-note {
+   
+    text-align: center;
+  }
+
+}
+
