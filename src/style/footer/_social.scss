@@ -1,0 +1,13 @@
+.social {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 152px;
+}
+
+.social--link {
+  transition: color 0.20s ease-in-out;
+  &:hover {
+    color: $color-main-sub;
+  }
+}

@@ -2,19 +2,18 @@
 @import 'style/fonts';
 @import 'style/var';
 @import 'style/default';
-@import 'style/bid';
 @import 'style/header/header';
 @import 'style/header/search';
+@import 'style/catalog/catalog-page';
+
+
+@import 'style/footer/footer';
+@import 'style/footer/social';
+@import 'style/bid';
+
 
 .header {
   background-color: $white;
 }
-.container{
-  width: $width;
-  margin: 0 auto;
-  padding: 5px;
-}
 
-.footer {
-  background-color: $footerBgc;
-}
+
