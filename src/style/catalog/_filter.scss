@@ -1,3 +1,7 @@
+.catalog__filter {
+  width: 340px;
+}
+
 .filter {
   position: relative;
   max-width: 340px;
@@ -10,6 +14,7 @@
     margin-bottom: 40px;
   }
   &__field {
+   
     margin-bottom: 30px;
     &:last-child {
       margin-bottom: 0px;
@@ -23,13 +28,14 @@
   }
   &__flex {
     display: flex;
+    flex-direction: column;
     gap: 10px;
-    &-column {
-      flex-direction: column;
-    }
+    // &-column {
+    //   flex-direction: column;
+    // }
   }
   &__input {
-    width: 165px;
+    width: 340px;
     font-size: 16px;
     line-height: 20px;
     padding: 9px 10px;
@@ -52,6 +58,7 @@
     font-size: 16px;
     line-height: 20px;
     padding: 8px 20px;
+    margin-left: 72px;
   }
   &__reset {
     position: absolute;
@@ -64,4 +71,5 @@
     background-color: transparent;
     border: none;
   }
+  
 }
