@@ -1,6 +1,6 @@
 .pagination {
- display: flex;
- flex-direction: row;
+//  display: flex;
+//  flex-direction: row;
  margin: 0 auto;
  &__arrow img{
   padding-top: 20px;
@@ -10,16 +10,20 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    padding: 18px;
+    margin: 18px;
     align-items: baseline;
     
+  }
+  &__item {
+    display: inline-block;
   }
   
 }
 
 .pagination__link-active {
       border: 2px solid $color-main;
-      text-align: center;
-      align-items: center;
       padding: 18px;
+      z-index: 100;
+      width: 36px;
+      height: 36px;
     }
