@@ -8,6 +8,7 @@
   &__container {
     display: grid;
     grid-template-columns: 4fr 1fr;
+    gap: 72px 30px;
   }
   &__pagination {
     grid-column: 2 span;

@@ -1,7 +1,7 @@
 {
   "name": "learn-wp",
   "version": "1.0.0",
-  "description": "",
+  "description": "test-project",
   "main": "index.js",
   "scripts": {
     "start": "set NODE_ENV=development&&webpack serve",
@@ -36,6 +36,7 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1"
+    "@babel/polyfill": "^7.12.1",
+    "swiper": "^8.2.6"
   }
 }
