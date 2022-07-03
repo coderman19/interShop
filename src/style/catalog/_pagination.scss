@@ -1,29 +1,17 @@
-.pagination {
-//  display: flex;
-//  flex-direction: row;
+.catalog__pagination {
+ display: flex;
+ flex-direction: row;
  margin: 0 auto;
- &__arrow img{
-  padding-top: 20px;
- }
-  & li {
-    list-style-type: none;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    margin: 18px;
-    align-items: baseline;
-    
-  }
-  &__item {
-    display: inline-block;
-  }
+ align-items: center;
+&-link {
+  padding: 18px;
+  cursor: pointer;
+  line-height: 22px;
+}
   
 }
 
-.pagination__link-active {
-      border: 2px solid $color-main;
-      padding: 18px;
-      z-index: 100;
-      width: 36px;
-      height: 36px;
-    }
+.active {
+  border: 2px solid $color-main;
+  padding: 18px;     
+}
