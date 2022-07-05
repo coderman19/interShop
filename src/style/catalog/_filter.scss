@@ -3,12 +3,16 @@
 }
 
 .filter {
-  position: relative;
+ padding-top: 78px;
   max-width: 340px;
+  &__form {
+    position: relative;
+  }
   &_title {
     font-weight: 700;
     font-size: 26px;
     line-height: 32px;
+    margin-bottom: 30px;
   }
   &__fields-list {
     margin-bottom: 40px;
@@ -30,15 +34,20 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    // &-column {
-    //   flex-direction: column;
-    // }
+    &-column {
+      flex-direction: column;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
   &__input {
     width: 340px;
     font-size: 16px;
     line-height: 20px;
-    padding: 9px 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 38px;
+    border: 1px solid $color-primary;
     &-select {
       width: 100%;
       color: $color-gray;
@@ -52,13 +61,16 @@
     margin-right: 10px;
   }
   &__apply {
+    margin: 0 auto;
+    display: block;
     background-color: $color-primary;
     color: $color-secondary;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     padding: 8px 20px;
-    margin-left: 72px;
+    // margin-left: 72px;
+    border: none;
   }
   &__reset {
     position: absolute;

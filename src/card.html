@@ -45,8 +45,9 @@
     <section class="card">
       <div class="container">
         <div class="card__details">
+        
           <!-- big slider -->
-          <div class="card__gallery">
+        <div class="card__gallery">
               <div class="swiper card__image">
                 <ul class="swiper-wrapper">
                   <li class="swiper-slide">
@@ -67,7 +68,7 @@
             <div class="swiper card__slider-thumb">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
-                  <button class="card__thumb-btn">
+                  <button class="card__thumb-btn-active">
                     <img src="img/card/clock-sm-1.jpg" alt="">
                   </button>
                 </li>
@@ -87,10 +88,11 @@
                   </button>
                 </li>
               </ul>
-              <div class="swiper-scrollbar"></div>
+              
+            
             </div>
           </div>
-
+        
           <div class="card__info">
             <h2 class="card__title">Спортивные часы Garmin Venu</h2>
             <p class="card__vendor-code">Артикул: 654651968</p>
@@ -101,67 +103,69 @@
                 <output class="card__number">1</output>
                 <button class="card__btn card__btn-inc">+</button>
               </div>
-            </div>
-
-            <p class="card__price">21 990 ₽</p>
+              <p class="card__price">21 990 ₽</p>
 
             <button class="card__add-cart">В корзину</button>
+            </div>
+            
+            <ul class="card__params-list">
+              <li class="card__params-item">
+                <span>Производитель:</span>
+                <span>Garmin</span>
+              </li>
+              <li class="card__params-item">
+                <span>Цвет:</span>
+                <span>бежевый</span>
+              </li>
+              <li class="card__params-item">
+                <span>Материал:</span>
+                <span>нержавеющая сталь</span>
+              </li>
+              <li class="card__params-item">
+                <span>Диагональ (дюйм):</span>
+                <span>1.2"</span>
+              </li>
+              <li class="card__params-item">
+                <span>Разрешение:</span>
+                <span>390x390</span>
+              </li>
+              <li class="card__params-item">
+                <span>Плотность пикселей:</span>
+                <span>460 ppi</span>
+              </li>
+              <li class="card__params-item">
+                <span>Экран:</span>
+                <span>AMOLED</span>
+              </li>
+              <li class="card__params-item">
+                <span>Сенсорный дисплей:</span>
+                <span>есть</span>
+              </li>
+              <li class="card__params-item">
+                <span>Цветной дисплей:</span>
+                <span>есть</span>
+              </li>
+              <li class="card__params-item">
+                <span>Длина:</span>
+                <span>43.2 мм</span>
+              </li>
+              <li class="card__params-item">
+                <span>Ширина:</span>
+                <span>43.2 мм</span>
+              </li>
+              <li class="card__params-item">
+                <span>Толщина:</span>
+                <span>12.4 мм</span>
+              </li>
+              <li class="card__params-item">
+                <span>Вес:</span>
+                <span>46.3 г</span>
+              </li>   
+            </ul>
           </div>
           <!-- информация о товаре -->
-          <ul class="card__params-list">
-            <li class="card__params-item">
-              <span>Производитель:</span>
-              <span>Garmin</span>
-            </li>
-            <li class="card__params-item">
-              <span>Цвет:</span>
-              <span>бежевый</span>
-            </li>
-            <li class="card__params-item">
-              <span>Материал:</span>
-              <span>нержавеющая сталь</span>
-            </li>
-            <li class="card__params-item">
-              <span>Диагональ (дюйм):</span>
-              <span>1.2"</span>
-            </li>
-            <li class="card__params-item">
-              <span>Разрешение:</span>
-              <span>390x390</span>
-            </li>
-            <li class="card__params-item">
-              <span>Плотность пикселей:</span>
-              <span>460 ppi</span>
-            </li>
-            <li class="card__params-item">
-              <span>Экран:</span>
-              <span>AMOLED</span>
-            </li>
-            <li class="card__params-item">
-              <span>Сенсорный дисплей:</span>
-              <span>есть</span>
-            </li>
-            <li class="card__params-item">
-              <span>Цветной дисплей:</span>
-              <span>есть</span>
-            </li>
-            <li class="card__params-item">
-              <span>Длина:</span>
-              <span>43.2 мм</span>
-            </li>
-            <li class="card__params-item">
-              <span>Ширина:</span>
-              <span>43.2 мм</span>
-            </li>
-            <li class="card__params-item">
-              <span>Толщина:</span>
-              <span>12.4 мм</span>
-            </li>
-            <li class="card__params-item">
-              <span>Вес:</span>
-              <span>46.3 г</span>
-            </li>   
-          </ul>
+         
+          
         </div>
         <div class="card__descriptions">
           <div class="card__description-title">Описание</div>
@@ -176,6 +180,7 @@
               Корпус смарт-часов выполнен из нержавеющей стали и отличается высокой защищенностью, соответствующей классу WR50. Благодаря этому модель позволяет выдерживать различные механические воздействия и давление до 5 бар. Для удобства ношения часы снабжены регулируемым силиконовым ремешком. Питание осуществляется от встроенного аккумулятора, способного обеспечить до 120 ч работы.</p>
           </div>
         </div>
+      </div>
       </div>
     </section>
     <!-- рекомендуемые товары -->
@@ -250,9 +255,34 @@
               </article>
             </li>
           </ul>
+          <!-- <div class="swiper-pagination">       
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link-active" aria-label="перейти на следующую страницу">1</a>
+                </li>          
+                <li class="swiper-pagination-bullet">
+                  <a class="pagination__link" aria-label="перейти на следующую страницу">2</a>
+                </li>           
+                <li class="pagination__item">
+                  <a class="pagination__link" aria-label="перейти на следующую страницу">3</a>
+                </li>          
+                <li class="pagination__item">
+                  <a class="pagination__link" aria-label="перейти на следующую страницу">4</a>
+                </li>           
+                <li class="pagination__item">
+                  <a class="pagination__link" aria-label="перейти на следующую страницу">5</a>
+                </li>             
+                <li class="pagination__item">
+                  <a class="pagination__link" aria-label="перейти на следующую страницу">6</a>
+                </li> 
+               </ul>       
+                    
+          </div> -->
+          </div>
+         
         </div>
       </div>
     </section>
+    <div class="catalog__pagination pagination"></div>
   </main>
   <!-- footer -->
   <footer class="footer">

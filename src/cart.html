@@ -41,12 +41,14 @@
       </div>
     </div>
   </header>
+
   <main class="main">
     <section class="cart">
-      <h2 class="visually-hidden">Корзина</h2>
+      <h2 class="visually-hidden">Оформление заказа</h2>
       <div class="container cart__container">     
+
             <section class="cart-goods">
-              <h3 class="cart-goods__title">Корзина</h3>
+              <h3 class="cart__title cart-goods__title">Корзина</h3>
               <ul class="cart-goods__list">
                 <li class="cart-goods__item item">
                   <img src="img/cart/monitor.jpg" alt="Монитор AOC" class="item__img">
@@ -125,8 +127,50 @@
               </ul>
             </section>
 
+            <section class="cart__total total">
+              <h3 class="visually-hidden">Итог</h3>
+              
+              <div class="total__wrapper">
+                <ul class="total__table">
+                  <li class="total__row total__row-header">
+                    <span>Итого</span>
+                    <span>41 222 ₽</span>
+                  </li>
+                  <li class="total__row total__row-gray">
+                    <span>Товары, 3 шт.</span>
+                    <span>41 222 ₽</span>
+                  </li>
+                  <li class="total__row total__row-gray">
+                    <span>Скидка</span>
+                    <span>0 ₽</span>
+                  </li>
+                  <li class="total__row total__row-gray total__row-gap">
+                    <span>Доставка</span>
+                    <span>0 ₽</span>
+                  </li>
+                  <li class="total__row">
+                    <span>Дата</span>
+                    <span>01 - 03 июля</span>
+                  </li>
+                  <li class="total__row">
+                    <span>Оплата</span>
+                    <span>Картой</span>
+                  </li>
+                 
+                  <div class="total__order">
+                    <button class="total__submit">Оформить заказ</button>
+    
+                    <label class="total__agree">
+                      <input type="checkbox" name="agree" required>
+                      <span>Согласен с <a href="" class="total__agree-link">условиями</a> правил пользования торговой площадкой и&nbsp;правилами возврата</span>
+                    </label>
+                  </div>
+                </ul>
+              </div>
+            </section>
+
             <section class="cart__address address">
-              <h3 class="cart__title">Адрес доставки</h3>
+              <h3 class="cart__title address__title">Адрес доставки</h3>
 
               <form class="address__form">
                 <label for="">
@@ -151,47 +195,8 @@
                   <input type="checkbox" name="save-address" id="">Запомнить этот адрес
                 </label>
               </form>
-            </section>
-         
-          <section class="cart__total">
-            <h3 class="visually-hidden">Итог</h3>
-            <ul class="total__table">
-              <li class="total__row total__row-header">
-                <span>Итого</span>
-                <span>41 222 ₽</span>
-              </li>
-              <li class="total__row total__row-gray">
-                <span>Товары, 3 шт.</span>
-                <span>41 222 ₽</span>
-              </li>
-              <li class="total__row total__row-gray">
-                <span>Скидка</span>
-                <span>0 ₽</span>
-              </li>
-              <li class="total__row total__row-gray">
-                <span>Доставка</span>
-                <span>0 ₽</span>
-              </li>
-              <li class="total__row">
-                <span>Дата</span>
-                <span>01 - 03 июля</span>
-              </li>
-              <li class="total__row">
-                <span>Оплата</span>
-                <span>Картой</span>
-              </li>
-             
-              <div class="total__order">
-                <button class="total__submit">Оформить заказ</button>
-
-                <label class="total__agree">
-                  <input type="checkbox" name="agree">
-                  <span>Согласен с <a href="" class="total__agree-link">условиями</a> правил пользования торговой площадкой и&nbsp;правилами возврата</span>
-                </label>
-              </div>
-            </ul>
-          </section>
-          
+            </section>  
+            <div class="catalog__pagination pagination"></div>  
       </div>    
     </section>
   </main>

@@ -229,6 +229,7 @@
 
                 <label>
                   <select class="filter__input filter__input-select" name="category">
+                    <option value="all" disabled selected>Все категории</option>
                     <option value="phone">Смартфоны</option>
                     <option value="tab">Планшеты</option>
                     <option value="clock">Умные часы</option>
@@ -266,64 +267,8 @@
               <button class="filter__reset" type="reset" aria-label="очистить все">Очистить все</button>
             </form>
           </aside>
-          <!-- предлагаю такой вариант пагинации -->
-          <div class="catalog__pagination pagination">
-            <div class="catalog__pagination-link">
-              <a href="" aria-label="перейти на первую страницу">
-                <img src="img/icons/arr-left.svg" alt="">
-              </a>
-            </div>
-            <div class="catalog__pagination-link">
-              <a href="" aria-label="перейти на следующую страницу">1</a>
-            </div>
-            <div class="catalog__pagination-link">
-              <a href="" aria-label="перейти на следующую страницу">2</a>
-            </div>
-            <div class="catalog__pagination-link">
-              <a href="" aria-label="перейти на следующую страницу">3</a>
-            </div>
-            <div class="catalog__pagination-link active">
-              <a href="" aria-label="перейти на следующую страницу">4</a>
-            </div>
-            <div class="catalog__pagination-link">
-              <a href="" aria-label="перейти на следующую страницу">5</a>
-            </div>
-            <div class="catalog__pagination-link">
-              <a href="" aria-label="перейти на следующую страницу">6</a>
-            </div>
-            <div class="catalog__pagination-link">
-              <a href="" aria-label="перейти на последнюю страницу">
-                <img src="img/icons/arr-right.svg" alt="">
-              </a>
-            </div>
-          </div>
-
-          <!-- <div class="catalog__pagination pagination">
-              <a href="#" class="pagination__arrow pagination__arrow-start" aria-label="перейти на первую страницу">
-                <img src="img/icons/arr-left.svg" alt="">
-                </a>              
-                <li class="pagination__item">
-                  <a class="pagination__link pagination__link-active" aria-label="перейти на следующую страницу">1</a>
-                </li>          
-                <li class="pagination__item">
-                  <a class="pagination__link" aria-label="перейти на следующую страницу">2</a>
-                </li>           
-                <li class="pagination__item">
-                  <a class="pagination__link" aria-label="перейти на следующую страницу">3</a>
-                </li>          
-                <li class="pagination__item">
-                  <a class="pagination__link" aria-label="перейти на следующую страницу">4</a>
-                </li>           
-                <li class="pagination__item">
-                  <a class="pagination__link" aria-label="перейти на следующую страницу">5</a>
-                </li>             
-                <li class="pagination__item">
-                  <a class="pagination__link" aria-label="перейти на следующую страницу">6</a>
-                </li>        
-              <a href="#" class="pagination__arrow pagination__arrow-end" aria-label="перейти на последнюю страницу">
-             <img src="img/icons/arr-right.svg" alt="">
-              </a>        
-          </div> -->
+            <!-- pagination -->
+          <div class="catalog__pagination pagination"></div>
         </div>
       </div>
     </section>
