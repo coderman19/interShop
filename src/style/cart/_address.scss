@@ -1,5 +1,41 @@
 .address {
+  position: relative;
+  width: 1080px;
+  padding: 70px 0 110px;
   &__title {
     margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
   }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    gap: 30px;
+  }
+
+  &__item { 
+    width: 340px;
+    padding: 15px 0 15px 10px;
+    outline: 1px solid $color-primary;
+  }
+
+  &__item-btn {
+    background-color:$color-primary;
+    color: $white;
+  }
+
+  &__label-save {
+    position: absolute;
+    right: 137px;
+    bottom: 65px;  
+  }
+
+  &__label-btn {
+  display: inline-block;
+   margin-right: 8px;
+  } 
 }
+
+
