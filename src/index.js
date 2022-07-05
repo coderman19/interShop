@@ -6,9 +6,10 @@ import './index.scss';
 
   // import Swiper JS
   import Swiper, {Thumbs, Scrollbar } from 'swiper';
-  // import Swiper styles
   import 'swiper/css';
   import 'swiper/css/scrollbar';
+
+
   import { pagination } from './modules/pagination';
 // создаем обертку и находим и связываем по классу
   const paginationWrapper = document.querySelector('.pagination');
@@ -34,6 +35,7 @@ import './index.scss';
     modules: [Scrollbar]
    });
 
+// 1 slider
  new Swiper('.card__image', {
   spaceBetween: 10,
   sliderPerview: 1,
@@ -44,6 +46,7 @@ import './index.scss';
   modules: [Thumbs]
  });
 
+// 3 slider
  new Swiper('.recommended__carousel', {
   spaceBetween: 30,
   sliderPerview: 5,
