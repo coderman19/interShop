@@ -5,5 +5,20 @@
     gap: 40px 30px;
   
   }
+
+  @include desktop {
+    justify-content: space-evenly;
+    gap: 20px;
+   }
+
+   @include laptop {
+    grid-template-columns: repeat(auto-fill, 310px);
+  
+   }
+
+   @include mobile {
+    grid-template-columns: repeat(auto-fill, 145px);
+    gap: 10px;
+   }
   
 }

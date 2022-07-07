@@ -1,12 +1,4 @@
-// $back: rgb(41, 41, 9);
-// $text: rgb(212, 166, 166);
-
-// $white: #fff;
-// $secondaryColor: #04E277;
-// $footerBgc: #272727;
-
 $width: 1820px;
-
 
 $color-primary: #272727;
 $color-secondary: #fff;
@@ -15,9 +7,36 @@ $color-main-sub: #08d072;
 $color-main-dark: #197c00;
 $color-gray: #6f6f6f;
 $color-gray-light: #cdcdcd;
-
 $white: #fff;
 
+$desktop: 1600px;
+$laptop: 1200px;
+$tablet: 1000px;
+$mobile: 560px;
+
+@mixin desktop {
+  @media (max-width: #{$desktop}) {
+    @content
+  }
+}
+
+@mixin laptop {
+  @media (max-width: #{$desktop}) {
+    @content
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{tablet}) {
+    @content
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content
+  }
+}
 
 
 

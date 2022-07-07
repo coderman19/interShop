@@ -17,9 +17,33 @@ import './index.scss';
   const pageURL = new URL(location);
 // преобразуем строку в число через +
   const page = +pageURL.searchParams.get('page') || 1;
+
+  let isMobile = false;
+
+  const startPagination = () => {
+    if (window.innerWidth < 560) {
+      pagination(paginationWrapper, 12, page, 4)
+      let isMobile = true;
+    } else {
+      pagination(paginationWrapper, 12, page, 6)
+      let isMobile = false;
+    }
+  }
 // передаем имя, кол-во страниц 20, кол-во на стр. 6
  try {
-  pagination(paginationWrapper, 20, page, 6);
+  startPagination();
+  window.addEventListener('resize', () => {
+    if (window.innerWidth < 560 && !isMobile) {
+      console.log('мобилка');
+      pagination(paginationWrapper, 12, page, 4)
+      let isMobile = true;
+    } if (window.innerWidth < 560 && isMobile) {
+      console.log('не мобилка');
+      pagination(paginationWrapper, 12, page, 6)
+      let isMobile = false;
+    }
+  })
+
  } catch(e) {
   console.warn(e);
   console.warn('is not main page');
